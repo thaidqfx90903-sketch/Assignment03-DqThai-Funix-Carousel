@@ -1,0 +1,444 @@
+body {
+  margin: 0px;
+}
+/** {
+  box-sizing: border-box;
+}*/
+
+a {
+  text-decoration: none;
+}
+
+/* Carousel */
+.my-carousel {
+  height: 420px;
+  overflow: hidden;
+  margin-bottom: 20px; /* khoảng cách tổng */
+  position: relative;
+  border-bottom: 1px solid #f3bca6;
+}
+
+.my-carousel::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px; /* nằm giữa khoảng trống 20px */
+  width: 100%;
+  background-color: #ddd;
+}
+
+/* Ảnh */
+.my-carousel .carousel-item,
+.my-carousel .carousel-item img {
+  height: 400px;
+}
+
+.my-carousel .carousel-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Chữ trên ảnh */
+.my-carousel .carousel-caption {
+  bottom: 50px;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  height: 400px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-family: arial, sans-serif, tahoma;
+}
+.sub-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-family: arial, sans-serif, tahoma;
+}
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  border-bottom: 1px solid #ddd;
+}
+
+.item {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-brand {
+  flex: 1.8; /* Ô giữa rộng hơn */
+}
+
+.nav-link {
+  color: #199cdb;
+  padding: 20px 0;
+}
+
+.title {
+  font-size: 24px;
+  color: #000;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #777;
+}
+
+/* main */
+/* Thông tin cá nhân + mục tiêu */
+.section-1 {
+  background-color: rgba(240, 234, 234, 0.5);
+  padding: 40px;
+}
+
+.cv-document {
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: arial, sans-serif, tahoma;
+  font-size: 10pt;
+}
+
+.cv-page {
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  width: 100%;
+  max-width: 1500px;
+  min-height: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  position: relative;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section-title {
+  padding-bottom: 5px;
+  font-size: 22px;
+  margin: 0;
+}
+
+.section-icon {
+  flex: 0 0 25%;
+  width: 25%;
+  padding-top: 10px;
+  font-size: 40px;
+}
+
+/*Set info*/
+.my-info {
+  padding: 3px 0;
+  font-size: 16px;
+}
+
+/*.my-info > b {
+  width: 120px;
+  display: inline-block;
+  margin-bottom: 10px;
+}*/
+
+#info {
+  position: relative;
+}
+
+#info img {
+  position: absolute;
+  width: 113px;
+  height: 113px;
+  right: 0;
+}
+
+#target {
+  order: 1;
+}
+
+#info {
+  order: 2;
+}
+
+.name {
+  color: #0e2452;
+  border-bottom: none;
+  margin-bottom: 10px;
+}
+
+/*Mục tiêu*/
+.tar {
+  font-size: 16px;
+  margin-top: 25px;
+  text-align: justify;
+  line-height: 22px;
+}
+
+/*Section 2: Học vấn - Hoạt động - Kinh nghiệm*/
+.study {
+  font-size: 16px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.exp {
+  font-size: 16px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.section-2 {
+  padding: 20px 0;
+}
+
+.flex-col {
+  border: 1px solid #ddd;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.badge {
+  background-color: #1a73e8;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+/*Section 3: Sở thích - ngôn ngữ - kỹ năng*/
+.section-3 {
+  padding: 20px 0;
+}
+
+.section-3 .job-info {
+  padding: 25px;
+}
+
+/* Hobby */
+
+.hobby-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.hobby-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.hobby-text {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.hobby-icon-circle {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #2ecc71;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobby-icon-circle i {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.skill-group {
+  margin-bottom: 20px;
+}
+
+.skill-label {
+  font-weight: bold;
+  color: #555;
+  margin: 0 0 8px 0;
+  font-size: 15px;
+}
+
+.bar-container {
+  gap: 5px;
+}
+
+.bar-segment {
+  display: inline-block;
+  height: 5px;
+  width: 45px;
+  background-color: #e0e0e0;
+  border-radius: 2px;
+}
+
+.bar-segment.active {
+  background-color: #2f7bf6; /*Tạo đường màu xanh dưới nội dung*/
+}
+
+/*Section 4: Chứng chỉ*/
+
+.cert-info img {
+  width: 160px;
+  object-fit: contain;
+}
+
+.section-4 {
+  background-color: rgba(240, 234, 234, 0.5);
+  font-size: 16px;
+}
+
+.cert-info:nth-child(1) {
+  border-right: 1px solid #f3bca6; /*Đường kẻ dọc giữa 2 cột*/
+}
+
+.cert-info:nth-child(1),
+.cert-info:nth-child(2) {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.cert-info:nth-child(1)::after,
+.cert-info:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 200%;
+  height: 1px;
+  background-color: #f3bca6;
+  /*Đường kẻ ngang sau 2 dòng*/
+}
+
+.cert-info:nth-child(2)::after {
+  display: none; /*Xóa đường kẻ sau dòng 2*/
+}
+
+/*Dự án*/
+#project {
+  position: relative;
+}
+
+.project-container {
+  padding: 20px 0;
+}
+
+.project-container .prj {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.project-container .prj img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.prj-body {
+  padding: 20px;
+}
+
+.project-name {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.prj-search {
+  /*khối năm - FUNIX - Developer*/
+  margin-bottom: 20px;
+}
+
+.prj-year {
+  /*Tạo kiểu cho năm 2021*/
+  font-size: 13px;
+  background-color: #2f7bf6;
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+  display: inline;
+}
+
+.prj-item {
+  color: #555;
+}
+
+.prj-body ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.prj-body li {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.prj-body li b {
+  color: #333;
+}
+
+/*Liên hệ*/
+a {
+  text-decoration: none;
+}
+
+.footer-container {
+  background-color: rgba(240, 234, 234, 0.5);
+}
+
+.footer-text {
+  color: #555;
+}
+
+.cv-document {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:hover {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
